@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_show_icon"
+        android:title="@string/pref_show_icon_in_notification_bar_title"
+        android:summary="@string/pref_show_icon_in_notification_bar_summ"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:key="pref_send_daily_notif"
+        android:title="@string/pref_send_daily_notif_title"
+        android:summary="@string/pref_send_daily_notif_summ"
+        android:defaultValue="true" />
+
+
+</PreferenceScreen>

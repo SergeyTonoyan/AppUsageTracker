@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">App usage tracker</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_about">О программе</string>
+
+    <string-array name="interval_values">
+        <item>Сегодня  </item>
+        <item>Неделя</item>
+        <item>Месяц</item>
+    </string-array>
+
+    <string name="allow_permission_dialog_message">Необходимо предоставить разрешение на чтение
+        статистики использования приложений. Если этого не сделать, то приложение не будет работать
+        корректно. Для предоставления разрешения, нажмите ОК и поставьте нужную галочку в окне,
+        которое появится на экране. </string>
+    <string name="permission_dialog_title">Запрос на разрешение</string>
+    <string name="ok_button_caption">OK</string>
+    <string name="cancel_button_caption">Отмена</string>
+    <string name="allow_permission_dialog_fragment_tag">allowPermissionDialogFragment</string>
+
+    <string name="pref_show_icon_in_notification_bar_title">Оповещение в панели уведомлений</string>
+    <string name="pref_show_icon_in_notification_bar_summ">Рекомендуется оставлять данную опцию включенной</string>
+    <string name="pref_send_daily_notif_summ">Получать статистику за предыдущий день в виде уведомления</string>
+    <string name="pref_send_daily_notif_title">Получать ежедневные уведомления</string>
+
+    <string name="pref_show_icon">pref_show_icon</string>
+    <string name="pref_send_daily_notif">pref_send_daily_notif</string>
+
+    <string name="unlocks_count_text_view_caption">Кол-во разблокировок: </string>
+    <string name="usage_time_text_view_caption">Общее время: </string>
+
+    <string name="ticker_text">Уведомление</string>
+    <string name="notification_title">Использовали:</string>
+    <string name="notification_text">Кол-во разблокировок:</string>
+    <string name="every_day_notification_text">"Чаще использовали: "</string>
+    <string name="every_day_notification_title">"Использовали: "</string>
+    <string name="hour">ч</string>
+    <string name="minute">м</string>
+</resources>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Simple app usage tracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+
+    <string-array name="interval_values">
+        <item>Today</item>
+        <item>Last week</item>
+        <item>Last month</item>
+    </string-array>
+
+    <string name="allow_permission_dialog_message">You must allow this application access to system statistics. If you don\'t do it application will not work properly. Please, set the checkbox in window that will appear after you click OK button</string>
+    <string name="permission_dialog_title">Permission required</string>
+    <string name="ok_button_caption">OK</string>
+    <string name="cancel_button_caption">Cancel</string>
+    <string name="allow_permission_dialog_fragment_tag">allowPermissionDialogFragment</string>
+
+    <string name="pref_show_icon_in_notification_bar_title">Show icon in notification bar</string>
+    <string name="pref_show_icon_in_notification_bar_summ">It\'s highly recommended  not to turn this option off</string>
+    <string name="pref_send_daily_notif_summ">Send yesterday\'s usage statistics</string>
+    <string name="pref_send_daily_notif_title">Send daily notifications</string>
+
+    <string name="pref_show_icon">pref_show_icon</string>
+    <string name="pref_send_daily_notif">pref_send_daily_notif</string>
+
+    <string name="unlocks_count_text_view_caption">Unlocks count: </string>
+    <string name="usage_time_text_view_caption">Usage time: </string>
+
+    <string name="ticker_text">Notification</string>
+    <string name="notification_title">Total usage time:</string>
+    <string name="notification_text">Unlocks count:</string>
+    <string name="every_day_notification_text">"Most used app: "</string>
+    <string name="every_day_notification_title">"Total usage time: "</string>
+    <string name="hour">h</string>
+    <string name="minute">m</string>
+</resources>
