@@ -154,6 +154,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         if (Build.VERSION.SDK_INT >= 21) {
             showPermissionDialog();
         }
+        updateFragment();
     }
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)

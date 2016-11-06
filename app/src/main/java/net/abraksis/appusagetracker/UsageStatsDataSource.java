@@ -86,6 +86,7 @@ public class UsageStatsDataSource {
             database.insert(DBHelper.PHONE_UNLOCKS_STATS_TABLE_NAME, null, contentValues);
         }
         cursor.close();
+        database.close();
     }
 
     public ArrayList<Application> getAppsUsageStatsByInterval(Interval interval) {
@@ -133,15 +134,6 @@ public class UsageStatsDataSource {
         }
         cursor.close();
         database.close();
-
-//        for (int i = 0; i < appsList.size(); i++) {
-//
-//            String appName = appsList.get(i).getPackageName();
-//            if (appName.contains("com.android.launcher")) {
-//                appsList.remove(i);
-//                Log.d(MainActivity.TAG, "item " + appName + " removed");
-//            }
-//        }
         return appsList;
     }
 
@@ -171,6 +163,7 @@ public class UsageStatsDataSource {
         int workingTimeColumnIndex = cursor.getColumnIndex(dbHelper.WORKING_TIME_COLUMN);
         int workingTime = cursor.getInt(workingTimeColumnIndex);
         cursor.close();
+        database.close();
         return workingTime;
     }
 
@@ -207,6 +200,7 @@ public class UsageStatsDataSource {
         int unlocksCountColumnIndex = cursor.getColumnIndex(dbHelper.UNLOCKS_COUNT_COLUMN);
         int unlocksCount = cursor.getInt(unlocksCountColumnIndex);
         cursor.close();
+        database.close();
         return unlocksCount;
     }
 
