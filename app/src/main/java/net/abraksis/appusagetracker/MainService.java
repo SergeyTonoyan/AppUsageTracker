@@ -33,6 +33,7 @@ public class MainService extends Service {
     private final int TICK_INTERVAL_MILLISECS = 500;
     private final int APP_NAME_NOT_FOUND = -1;
     private boolean isMainThreadRun;
+    private boolean isStartForeground = true;
 
     private  ArrayList<Application> apps;
 
@@ -82,8 +83,12 @@ public class MainService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
 
         Log.d(MainActivity.TAG, "service started ");
-        boolean isStartForeground = intent.getBooleanExtra(MainActivity.BUNDLE_IS_START_FOREGROUND,
-                false);
+
+        if (intent != null) {
+
+            isStartForeground = intent.getBooleanExtra(MainActivity.BUNDLE_IS_START_FOREGROUND,
+                    false);
+        }
 
         if (isStartForeground) {
 

@@ -21,7 +21,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener,
+public  class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener,
         SharedPreferences.OnSharedPreferenceChangeListener {
 
     public static final String BUNDLE_APPS = "apps";
@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public static final int NOTIFICATION_TIME_HOUR = 8;
     public static final int NOTIFICATION_TIME_MINUTE = 30;
+
+
 
     private UsageStatsFragment usageStatsFragment;
     private DialogFragment allowPermissionDialogFragment;

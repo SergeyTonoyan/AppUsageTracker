@@ -130,8 +130,8 @@ public class UsageStatsDataSource {
             app = new Application(appName, workingTime);
             appsList.add(app);
             cursor.moveToNext();
-
         }
+
         cursor.close();
         database.close();
         return appsList;
@@ -178,7 +178,13 @@ public class UsageStatsDataSource {
     public Application getMostUsedApp(Calendar firstDate, Calendar secondDate) {
 
         ArrayList<Application> apps = getAppsUsageStatsByDate(firstDate, secondDate);
-        Application mostUsedApp = apps.get(0);
+        Application mostUsedApp = null;
+
+        if (apps.isEmpty()) {
+            mostUsedApp = new Application("unknown", 0);
+        } else {
+            mostUsedApp = apps.get(0);
+        }
         return mostUsedApp;
     }
 
